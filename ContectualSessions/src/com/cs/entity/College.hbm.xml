@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Oct, 2017 11:18:41 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.cs.entity.College" table="COLLEGE">
+        <id name="collegeCode" type="int" access="field">
+            <column name="COLLEGECODE" />
+            <generator class="increment" />
+        </id>
+        <property name="studentNo" type="int" access="field">
+            <column name="STUDENTNO" />
+        </property>
+        <property name="collegeName" type="java.lang.String" access="field">
+            <column name="COLLEGENAME" />
+        </property>
+        <property name="Address" type="java.lang.String" access="field">
+            <column name="ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>

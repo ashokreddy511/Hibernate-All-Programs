@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Aug, 2017 7:57:43 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.auto.entites.Vehicle" table="VEHICLE">
+        <id name="vehicleNo" column="VEHICLE_NO" />
+            
+ 
+        <property name="vehicleModelNO" column="VEHICLE_MODEL_NM" />
+       
+        <property name="color" column="COLOR" />
+       
+        <property name="vehiclePurchaseDate"  column="VEHICLE_PURCHASE_DT"/>
+      
+        <property name="chasisNO"  column="CHASIS_NO" />
+        
+        <property name="engineNo"  column="ENGINE_NO" />
+        
+        <property name="registrationNo"  column="REGISTRATION_NO" />
+        
+        <property name="batteryNo"  column="BATTERY_NO" />
+        
+    </class>
+</hibernate-mapping>

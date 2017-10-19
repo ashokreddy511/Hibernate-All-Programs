@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpcc.entity">
+	<union-subclass name="CheckPayment" extends="Payment"
+		table="CHECK_PAYMENT">
+		<property name="chackNo" column="CHECK_NO" />
+		<property name="issuedBank" column="ISSUEBACK"/>
+		<property name="checkDate" column="CHECK_DATE"/>
+	</union-subclass>
+</hibernate-mapping>

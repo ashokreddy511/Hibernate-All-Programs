@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tpcc.entity">
+	<union-subclass name="CardPayment" extends="Payment" table="CARD_PAYMENT">
+	
+	<!-- <property name="paidDate" column="paid"/>
+	<property name="discription" column="Information"/>
+	<property name="amount" column="balance"/> -->
+		<property name="cardNo" column="CARD_NO"/>
+			<property name="cardHOlder" column="CARD_HOLDER_NM"/>
+			<property name="cardType" column="CARD_TYPE"/>
+	</union-subclass>
+</hibernate-mapping>

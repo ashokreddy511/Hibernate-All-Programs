@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Sep, 2017 11:17:32 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.tools.entites.Advisor" table="advisor" catalog="automobile">
+        <id name="advisorNo" type="int">
+            <column name="ADVISOR_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstNm" type="string">
+            <column name="FIRST_NM" length="45" not-null="true" />
+        </property>
+        <property name="lastNm" type="string">
+            <column name="LAST_NM" length="45" not-null="true" />
+        </property>
+        <property name="qualification" type="string">
+            <column name="QUALIFICATION" length="45" not-null="true" />
+        </property>
+        <property name="experience" type="int">
+            <column name="EXPERIENCE" not-null="true" />
+        </property>
+        <property name="contactNo" type="int">
+            <column name="CONTACT_NO" not-null="true" />
+        </property>
+        <property name="emailAddress" type="string">
+            <column name="EMAIL_ADDRESS" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

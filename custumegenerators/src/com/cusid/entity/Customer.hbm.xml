@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.cusid.entity">
+    <class name="Customer" table="customer">
+        <id name="customerId" column="CUST_ID">
+            <generator class="com.cusid.entity.CustomIdGenerator"/>
+        </id>
+        <property name="customerName" column="CUST_NAME"/>
+        <property name="city" column="CITY" />
+    </class>
+</hibernate-mapping>

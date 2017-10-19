@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Aug, 2017 3:41:21 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hb.trans.Advisor" table="ADVISOR">
+       <id name="advisorNo" column="ADVISOR_No"/>
+       <property name="firstName" column="FIRST_NM"/>
+       <property name="lastName" column="LAST_NM"/>
+       <property name="qualification" column="QUALIFICATION"/>
+       <property name="Experience" column="EXPERIENCE"/>
+       <property name="contactNo" column="CONTACT_NO"/>
+       <property name="emailAddress" column="EMAIL_ADDRESS"></property>
+    </class>
+</hibernate-mapping>

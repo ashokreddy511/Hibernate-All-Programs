@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Sep, 2017 11:21:34 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.ck.entites.ResouceAllocator" table="RESOUCEALLOCATOR">
+		<composite-id>
+			<key-property name="resouceNo" />
+			<key-property name="projectNo" />
+		</composite-id>
+
+
+		<property name="resAssign_state_dt" type="java.util.Date">
+			<column name="RESASSIGN_STATE_DT" />
+		</property>
+		<property name="resAssign_end_dt" type="java.util.Date">
+			<column name="RESASSIGN_END_DT" />
+		</property>
+		<property name="app_percentage" type="int">
+			<column name="APP_PERCENTAGE" />
+		</property>
+	</class>
+</hibernate-mapping>

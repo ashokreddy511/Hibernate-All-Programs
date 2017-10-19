@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2017 11:38:19 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.idg.entity.Appaintment" table="APPAINTMENT">
+        <id name="appointmentNo" type="int">
+            <column name="APPOINTMENTNO" />
+            <generator class="assigned" />
+        </id>
+        
+        <!-- <id name="appointmentNo" typr="int">
+        <column name="APPOINTMENTNO"/>
+        <generator class="increment"></generator>
+        </id> -->
+        
+        <!-- <id name="appointmentNo" type="int">
+        <column name="APPOINTMENTNO"/>
+        <generator class="identity"/>
+        </id> -->
+        
+        <id name="appointmentNo" type="int">
+        <column name=""></column>
+        </id>
+
+        <property name="appointmentDate" type="java.util.Date">
+            <column name="APPOINTMENTDATE" />
+        </property>
+        <property name="doctor" type="java.lang.String">
+            <column name="DOCTOR" />
+        </property>
+        <property name="pacentName" type="java.lang.String">
+            <column name="PACENTNAME" />
+        </property>
+        <property name="mobileNo" type="java.lang.String">
+            <column name="MOBILENO" />
+        </property>
+        <property name="mail" type="java.lang.String">
+            <column name="MAIL" />
+        </property>
+    </class>
+</hibernate-mapping>

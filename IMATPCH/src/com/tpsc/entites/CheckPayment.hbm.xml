@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpsc.entites">
+	<joined-subclass name="CheckPayment" table="CHECK_PAYMENT" extends="Payment">
+		<key column="CHECK_PAYMENT_NO"/>
+		<property name="checkNo" column="CHECK_NO"/>
+		<property name="checkDate" column="CHECK_DT"/>
+		<property name="checkAccountNo" column="CHECK_ACC_NO"/>
+		<property name="issueBank" column="ISSUE_BANK"/>
+	</joined-subclass>
+</hibernate-mapping>

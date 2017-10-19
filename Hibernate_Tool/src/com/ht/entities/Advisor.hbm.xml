@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31 Aug, 2017 10:11:42 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ht.entities.Advisor" table="ADVISOR">
+        <id name="advisorNo" type="int" access="field">
+            <column name="ADVISOR_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="frirstName" type="java.lang.String" access="field">
+            <column name="FRIRST_NM" />
+        </property>
+        <property name="lastName" type="java.lang.String" access="field">
+            <column name="LAST_NM" />
+        </property>
+        <property name="experiance" type="java.lang.String" access="field">
+            <column name="EXPERIANCE" />
+        </property>
+        <property name="qualification" type="java.lang.String" access="field">
+            <column name="QUALIFICATION" />
+        </property>
+        <property name="contactNo" type="java.lang.String" access="field">
+            <column name="CONTACT_NO" />
+        </property>
+        <property name="emailAddress" type="java.lang.String" access="field">
+            <column name="EMAIL_ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>

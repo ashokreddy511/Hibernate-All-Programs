@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Sep, 2017 1:35:06 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.idg.entity.Appaintment" table="APPAINTMENT">
+       <!--  <id name="appointmrentNo" type="int">
+            <column name="APPOINTMRENTNO" />
+            <generator class="assigned" />
+        </id> 
+       -->
+       
+       <!--  <id name="appointmrentNo" type="int">
+            <column name="APPOINTMRENTNO" />
+            <generator class="increment" />
+            
+            it fetch the max(no) from database and placed into session factory
+            after second request onword's it increment goes on the from session factory [entiryclass,max[no]]
+            it work any non-cluster environment. 
+        </id> -->
+        <!-- 
+        <id name="appointmrentNo" type="int">
+            <column name="APPOINTMRENTNO" />
+            <generator class="hilo">
+            <param name="table">hilo_unic_key</param>
+            <param name="column">next_hi</param>
+            <param name="max_lo">5</param>
+            </generator>
+        </id> --> 
+        
+	 	<!-- <id name="appointmrentNo" type="int">
+            <column name="APPOINTMRENTNO" />
+            <generator class="guid">
+            </generator>
+       	</id> --> 
+       
+    	<id name="appointmrentNo">
+            <column name="APPOINTMRENTNO" />
+            <generator class="uuid"/>     
+       </id>  
+       
+        <property name="appointmentDate" type="java.util.Date">
+            <column name="APPOINTMENTDATE" />
+        </property>
+        <property name="doctor" type="java.lang.String">
+            <column name="DOCTOR" />
+        </property>
+        <property name="pacentName" type="java.lang.String">
+            <column name="PACENTNAME" />
+        </property>
+        <property name="mpbile" type="java.lang.String">
+            <column name="MPBILE" />
+        </property>
+        <property name="mail" type="java.lang.String">
+            <column name="MAIL" />
+        </property>
+    </class>
+</hibernate-mapping>

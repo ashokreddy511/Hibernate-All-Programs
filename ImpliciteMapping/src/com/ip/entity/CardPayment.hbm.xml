@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ip.entity">
+	<class name="CardPayment" table="CARD_PAYMENT">
+		<id name="paymentNo" column="PAYMENT_NO">
+			<generator class="increment" />
+		</id>
+		<property name="discription" column="DRICRIPTION" />
+		<property name="paidDate" column="PAID_DATE" />
+		<property name="amount" column="AMOUNT" />
+		<property name="cardNo" column="CARD_NO"/>
+		<property name="cardHOlder" column="CARD_HOLDER_NM"/>
+		<property name="cardType" column="CARD_TYPE"/>
+	</class>
+</hibernate-mapping>

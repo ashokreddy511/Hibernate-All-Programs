@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpcha.entites">
+<subclass name="SavingAccount" extends="Account" discriminator-value="saving">
+	<property name="minBalance" column="MIN_BAL"/>
+	<property name="hasCheckFault" column="HASCHECKFULT"/>
+	<property name="withdraw" column="WITHDRAW"/>
+</subclass>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.otomto.entites">
+	<class name="Account" table="ACCOUNT">
+		<id name="accountNo" column="ACCOUNT_NO">
+			<generator class="increment" />
+		</id>
+		<property name="openDate" column="OPEN_DATE" />
+		<property name="contactPerson" column="CONTACT_PRESON" />
+		<property name="contactNo" column="CONTACT_NO" />
+		<property name="email_Address" column="EMAIL_ADDRESS" />
+		<many-to-one name="organization" column="ACC_ORG_NO" class="Organization" unique="true" not-null="true"/>
+	</class>
+</hibernate-mapping>

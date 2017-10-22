@@ -22,7 +22,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="G:/ashokreddy-soft/Spring/Jar Bundles/Oracle JDBC Jar/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="G:/ashokreddy-soft/softwares/hibernate/Hibernate/Jar Bundles/Jdbc Drivers/mysql-connector-java-5.1.22/mysql-connector-java-5.1.22-bin.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oto.entites">
+	<class name="Candidate" table="CANDIDATE">
+		<id name="candidateNo" column="CANDIDATE_NO">
+			<generator class="increment"/>
+		</id>
+		<property name="candidateName" column="CANDIDATE_NM" />
+		<property name="applyFor" column="APPLYFOR" />
+		<property name="apperDate" column="APPER_DT" />
+		<property name="contactNo" column="CONTACTNO" />
+		<property name="email_Addess" column="EMAIL_ADDRS"/>
+	</class>
+</hibernate-mapping>

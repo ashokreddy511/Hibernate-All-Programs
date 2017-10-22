@@ -12,7 +12,12 @@
 		<property name="hbm2ddl.auto">update</property>
 		<property name="current_session_context_class">thread</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<mapping resource="com/otomto/entites/Account.hbm.xml"/>
-		<mapping resource="com/otomto/entites/Oraganization.hbm.xml"/>
+		<!-- <mapping resource="com/otomto/entites/Account.hbm.xml"/>
+		<mapping resource="com/otomto/entites/Oraganization.hbm.xml"/> -->
+		
+		<mapping resource="com/oto/entites/Candidate.hbm.xml"/>
+		<mapping resource="com/oto/entites/Evaluvation.hbm.xml"/>
+		
+		
 	</session-factory>
 </hibernate-configuration>
